@@ -1,0 +1,30 @@
+<launch>
+
+    <!-- motor drivers -->
+    <node pkg="bbb5_motor_control_dynparam" type="motor.py" name="motor_driver_a">
+        <param name="pwm" value="P9_14" />
+        <param name="dir1" value="P8_07" />
+        <param name="dir2" value="P8_09" />
+        <remap from="motor" to="motor_a" />
+    </node>
+
+    <node pkg="bbb5_motor_control_dynparam" type="motor.py" name="motor_driver_b">
+        <param name="pwm" value="P9_16" />
+        <param name="dir1" value="P8_08" />
+        <param name="dir2" value="P8_10" />
+        <remap from="motor" to="motor_b" />
+    </node>
+
+    <!-- motor controller -->
+    <node pkg="bbb5_motor_control_dynparam" type="ramp_controller.py" name="ramp_controller_a">
+        <remap from="drive" to="motor_a" />
+    </node>
+
+    <node pkg="bbb5_motor_control_dynparam" type="ramp_controller.py" name="ramp_controller_b">
+        <remap from="drive" to="motor_b" />
+    </node>
+
+    <!-- planner -->
+    <node pkg="bbb5_motor_control_dynparam" type="planner.py" name="planner" />
+    
+</launch>

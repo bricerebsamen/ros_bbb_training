@@ -1,0 +1,6 @@
+# This is to be executed on the host (as root) to let the BBB use the host's
+# internet connection.
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables -A POSTROUTING -t nat -j MASQUERADE
+

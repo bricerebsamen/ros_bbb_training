@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package>
+  <name>bbb4_motor_control_params</name>
+  <version>0.0.0</version>
+  <description>The bbb4_motor_control_params package is the same as bbb3 but
+  parameters are read from the ros parameter server.
+  </description>
+
+  <maintainer email="brice@todo.todo">brice</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+
+</package>

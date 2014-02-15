@@ -1,0 +1,9 @@
+# This is to be exectuted on the BBB each time after booting it
+# so that it will be able to access the internet using the host's
+# internet connection (assuming the host has been configured to share it), 
+# and to setup the time on the board with internet time.
+
+route add default gw 192.168.7.1
+echo "nameserver 8.8.8.8" > /etc/resolv.conf
+ntpdate -b -s -u pool.ntp.org
+

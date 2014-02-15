@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package>
+  <name>bbb1_talker_listener</name>
+  <version>0.0.0</version>
+  <description>The bbb1_talker_listener package demonstrates
+  message passing in ROS. Taken from the rospy tutorial.
+  </description>
+
+  <maintainer email="brice@todo.todo">brice</maintainer>
+
+  <license>TODO</license>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+
+</package>

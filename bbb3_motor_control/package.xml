@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package>
+  <name>bbb3_motor_control</name>
+  <version>0.0.0</version>
+  <description>The bbb3_motor_control package demonstrates how to design a
+  motor driver with IO and message passing.
+  </description>
+
+  <maintainer email="brice@todo.todo">brice</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+
+</package>

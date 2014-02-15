@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+  <name>bbb5_motor_control_dynparam</name>
+  <version>0.0.0</version>
+  <description>The bbb5_motor_control_dynparam package is the same as bbb4 but
+  parameters can be adjusted dynamically.
+  </description>
+
+  <maintainer email="brice@todo.todo">brice</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>dynamic_reconfigure</run_depend>
+
+</package>
